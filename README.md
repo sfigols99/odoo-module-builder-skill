@@ -1,6 +1,6 @@
 # Odoo Module Builder Skill
 
-A Claude skill for building complete Odoo modules (v16 and v17) with correct structure, conventions, and best practices.
+An AI agent skill for building complete Odoo modules (v16 and v17) with correct structure, conventions, and best practices.
 
 ## What It Does
 
@@ -36,7 +36,7 @@ A Claude skill for building complete Odoo modules (v16 and v17) with correct str
 
 ## Installation
 
-Install the `.skill` file through your Claude-compatible editor.
+Install the `.skill` file through your compatible editor or agent platform.
 
 ## Usage Examples
 

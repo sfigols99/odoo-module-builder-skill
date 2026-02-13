@@ -1,1 +1,4 @@
 .agents
+.dist-skill-src/
+dist/
+*.skill
