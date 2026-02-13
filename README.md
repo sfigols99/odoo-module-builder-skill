@@ -1,5 +1,7 @@
 # Odoo Module Builder Skill
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 An AI agent skill for building complete Odoo modules (v16 and v17) with correct structure, conventions, and best practices.
 
 ## What It Does
@@ -7,6 +9,7 @@ An AI agent skill for building complete Odoo modules (v16 and v17) with correct 
 - **Scaffold new modules** — generates a full Odoo addon with models, views, security, menus, and manifest via `scripts/scaffold_module.py`
 - **Extend existing modules** — guides inheritance of models (`_inherit`) and views (`inherit_id`)
 - **Version-aware** — handles Odoo 16 (`attrs=`) and Odoo 17 (`invisible="expr"`) differences automatically
+- **Comprehensive references** — 13 detailed reference guides covering all aspects of Odoo development
 
 ## Bundled Resources
 
@@ -44,3 +47,34 @@ Install the `.skill` file through your compatible editor or agent platform.
 - "Add a new model to my Odoo module for tracking loans"
 - "Extend res.partner with a loyalty points field"
 - "Scaffold an Odoo 16 addon called inventory_tracking"
+
+## Quick Start
+
+### Scaffolding a New Module
+
+```bash
+python3 scripts/scaffold_module.py library_management --path ./addons --odoo-version 17
+```
+
+This creates a complete Odoo module with:
+- Model with common fields (name, state, company_id)
+- Form, tree, and search views
+- Security groups and access rights
+- Menu structure
+- Mail thread integration
+
+### Using as an AI Skill
+
+Install the `.skill` file in your compatible AI agent platform, then ask it to help you build Odoo modules. The skill provides context-aware guidance using the bundled reference documentation.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes in each version.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
